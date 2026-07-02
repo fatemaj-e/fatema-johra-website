@@ -11,105 +11,91 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#home">Fatema Tuj Johra</a>
-      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-        Menu
-      </button>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="hero-header" id="home">
+      <h1>Fatema Tuj Johra</h1>
+      <p>Ph.D. Candidate at University of Texas at Dallas</p>
+      <div class="title-rule" aria-hidden="true"></div>
     </header>
 
-    <main class="page-shell" id="home">
-      <aside class="profile-sidebar" aria-label="Profile and contact information">
-        <figure class="portrait">
-          <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder">
-            <span>Photo</span>
-          </div>
-          <figcaption>University of Texas at Dallas</figcaption>
-        </figure>
-
-        <section class="sidebar-section" id="contact" aria-labelledby="contact-heading">
-          <h2 id="contact-heading">Contact</h2>
-          <dl class="contact-list">
-            <div>
-              <dt>Email</dt>
-              <dd><a href="mailto:fatema.johra@example.com">fatema.johra@example.com</a></dd>
+    <main>
+      <section class="intro-band" aria-labelledby="intro-heading">
+        <div class="intro-layout">
+          <figure class="portrait">
+            <img
+              class="profile-photo"
+              src="assets/profile.png"
+              alt="Fatema Tuj Johra"
+              onerror="this.hidden = true; this.nextElementSibling.hidden = false;"
+            />
+            <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder" hidden>
+              <span>Photo</span>
             </div>
-            <div>
-              <dt>Department</dt>
-              <dd>Economics, University of Texas at Dallas</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>Richardson, Texas</dd>
-            </div>
-          </dl>
-        </section>
+          </figure>
 
-        <section class="sidebar-section" id="cv" aria-labelledby="cv-heading">
-          <h2 id="cv-heading">CV</h2>
-          <a class="button full-width" href="assets/Fatema_Tuj_Johra_CV.pdf">Download CV</a>
-        </section>
-      </aside>
-
-      <section class="main-content">
-        <section class="intro-section" aria-labelledby="about-heading">
-          <p class="eyebrow">PhD Candidate in Economics</p>
-          <h1>Fatema Tuj Johra</h1>
-          <h2 id="about-heading">About</h2>
-          <p>
-            I am a PhD Candidate in Economics at the University of Texas at Dallas. My work
-            studies macroeconomic fluctuations, monetary dynamics, and the historical
-            evolution of economic volatility and uncertainty.
-          </p>
-          <p>
-            I am especially interested in using time series methods to place recent
-            macroeconomic shocks in a longer historical context.
-          </p>
-        </section>
-
-        <section class="content-section" aria-labelledby="interests-heading">
-          <h2 id="interests-heading">Research Interests</h2>
-          <ul>
-            <li>Macroeconomics</li>
-            <li>Monetary Economics</li>
-            <li>Historical Macroeconomic Volatility and Uncertainty</li>
-            <li>Time Series Analysis</li>
-          </ul>
-        </section>
-
-        <section class="content-section" id="research" aria-labelledby="research-heading">
-          <h2 id="research-heading">Working Papers</h2>
-          <article class="paper">
-            <h3>A Century of Inflation and Economic Uncertainty: Putting the COVID-19 Shock in Context</h3>
-            <p class="paper-status">Working paper</p>
+          <div class="intro-copy">
+            <h2 class="sr-only" id="intro-heading">Introduction</h2>
             <p>
-              This project examines inflation and economic uncertainty across a long historical
-              horizon, placing the COVID-19 shock in context alongside earlier episodes of
-              macroeconomic volatility. The paper uses time series analysis to compare recent
-              dynamics with historical patterns in inflation, uncertainty, and broader economic
-              fluctuations.
+              Hi, welcome to my personal website! I am a Ph.D. Candidate in Economics at
+              the University of Texas at Dallas.
             </p>
-            <div class="paper-links">
-              <a href="#" aria-disabled="true">Paper coming soon</a>
-              <a href="#" aria-disabled="true">Slides coming soon</a>
-            </div>
-          </article>
-        </section>
+            <p>
+              My research focuses on macroeconomic fluctuations, monetary economics,
+              historical macroeconomic volatility and uncertainty, and time series analysis.
+            </p>
+            <p>
+              My research interests include:
+            </p>
+            <ul class="interest-list">
+              <li>Macroeconomics</li>
+              <li>Monetary economics</li>
+              <li>Historical macroeconomic volatility and uncertainty</li>
+              <li>Time series analysis</li>
+            </ul>
 
-        <section class="content-section" id="teaching" aria-labelledby="teaching-heading">
-          <h2 id="teaching-heading">Teaching</h2>
+            <section class="contact-block" id="contact" aria-labelledby="contact-heading">
+              <h2 id="contact-heading">Contact Information:</h2>
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:fatema.johra@example.com">fatema.johra@example.com</a>
+              </p>
+              <p>
+                <strong>Address:</strong> Department of Economics, University of Texas at
+                Dallas, Richardson, TX 75080
+              </p>
+              <p>
+                <strong>CV:</strong>
+                <a href="assets/Fatema_Tuj_Johra_CV.pdf">Download CV</a>
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <h3>Work in Progress</h3>
+        <article class="paper">
+          <h4>A Century of Inflation and Economic Uncertainty: Putting the COVID-19 Shock in Context</h4>
           <p>
-            My teaching interests include macroeconomics, monetary economics, economic history,
-            econometrics, and time series methods. Teaching materials and course information can
-            be added here as they become available.
+            This project examines inflation and economic uncertainty across a long historical
+            horizon, placing the COVID-19 shock in context alongside earlier episodes of
+            macroeconomic volatility. The paper uses time series analysis to compare recent
+            dynamics with historical patterns in inflation, uncertainty, and broader economic
+            fluctuations.
           </p>
-        </section>
+          <p class="paper-links">
+            <a href="#" aria-disabled="true">Paper coming soon</a>
+            <a href="#" aria-disabled="true">Slides coming soon</a>
+          </p>
+        </article>
+      </section>
+
+      <section class="content-section" id="teaching" aria-labelledby="teaching-heading">
+        <h2 id="teaching-heading">Teaching</h2>
+        <p>
+          Teaching information can be added here, including courses, semesters, and
+          instructor or teaching assistant responsibilities.
+        </p>
       </section>
     </main>
 
